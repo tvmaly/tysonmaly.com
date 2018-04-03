@@ -1,0 +1,58 @@
+baseURL = "http://www.tysonmaly.com"
+languageCode = "en-us"
+disablePathToLower = "true"
+title = "Life Long Learning, Thinking, and Curiosity - Tyson Maly Computer Engineer and Technical Manager"
+theme = "mainroad"
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+
+[permalinks]
+	top = "/:filename/"
+
+[Author]
+    name = "Tyson Maly"
+    bio = "Computer Engineer and Engineering Manager"
+    avatar = "img/avatar.jpg"
+
+
+[Params]
+    subtitle = "The best thing a human being can do is to help another human being know more - Charlie Munger" # Subtitle of your site
+    description = "Tyson Maly Computer Engineer Full Stack Developer" # Description of your site
+    opengraph = true
+    twittercards = true
+    readmore = false # Show "Read more" button in list if true
+    leftsidebar = false # Move sidebar to the left side if true
+    authorbox = true
+    post_navigation = true
+    postSections = ["post"]
+
+
+[Params.widgets]
+    search = true # Enable "Search" widget
+    recent_articles = true # Enable "Recent arcticles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+	social_twitter = "tysonmaly"
+	social_github = "tvmaly"
+
+[related]
+    threshold = 50
+    includeNewer = false
+    toLower = false
+
+[[related.indices]]
+    name = "keywords"
+    weight = 150
+[[related.indices]]
+    name  = "author"
+    toLower = true
+    weight = 30
+[[related.indices]]
+    name  = "tags"
+    weight = 100
+[[related.indices]]
+    name  = "date"
+    weight = 10
+    pattern = "2006"
+
